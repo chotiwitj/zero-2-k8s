@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: # 🔍 container name here
-      image: <yourdockerrepo>/<image-name:ver># 🔍 use the correct image from Docker Hub
+      image: gmadhavi/zero-2-k8s:1.0.0
       env:
         - name: NAME
           value: # 🔍 your full name
