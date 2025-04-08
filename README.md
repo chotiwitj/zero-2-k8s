@@ -21,4 +21,4 @@ If everything is correct, you’ll be rewarded with your name on an official-loo
 ```bash
 kubectl apply -f pod.yaml
 kubectl apply -f service.yaml
-minikube service zero2k8s
+minikube service <service-name>
