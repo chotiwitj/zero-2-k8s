@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: # 🔍 fill in a name for the pod
+  labels:
+    app: # 🔍 provide a label to match with the service
+spec:
+  containers:
+    - name: # 🔍 container name here
+      image: <yourdockerrepo>/<image-name:ver># 🔍 use the correct image from Docker Hub
+      env:
+        - name: NAME
+          value: # 🔍 your full name
+      ports:
+        - containerPort: # 🔍 default port for a Node.js Express app
