@@ -8,18 +8,19 @@ This guide walks through the **imperative commands** needed to complete the "Zer
 ```bash
 kubectl run cert-pod \
   --image=gmadhavi/zero-to-k8s \
-  --port=3000 \
-  --env="NAME=YourName"
+  --port=<port> \
+  --env="NAME=<YourName>"
 ```
 Replace `YourName` with your actual name.
 
+💡 Hint: This app is based on Node.js. If you're not specifying a port, it typically listens on port 3000 by default.
 ---
 
 ## 🌐 Step 2: Expose the Pod via NodePort
 ```bash
 kubectl expose pod cert-pod \
-  --port=3000 \
-  --target-port=3000 \
+  --port=<port> \
+  --target-port=<port> \
   --type=NodePort \
   --name=cert-service
 ```
@@ -33,7 +34,7 @@ kubectl get svc cert-service
 Example output:
 ```
 NAME           TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-cert-service   NodePort   <ip-address>    <none>        3000:31234/TCP   10s
+cert-service   NodePort   <ip-address>    <none>        3000:<nodeport>/TCP   10s
 ```
 Take note of the NodePort (e.g., `31234`).
 
@@ -42,7 +43,7 @@ Take note of the NodePort (e.g., `31234`).
 ## 🧪 Step 4: Access the App via curl
 ```bash
 curl http://localhost:<nodeport>
-curl http://ip-address:3000
+curl http://ip-address:<port>
 ```
 Example:
 ```bash
@@ -68,7 +69,7 @@ If you're comfortable with imperative commands and want to do everything in one 
 kubectl run cert-cli \
   --image=gmadhavi/zero-to-k8s \
   --env="NAME=<YOURNAME>" \
-  --port=3000 \
+  --port=<port> \
   --expose
 ```
 > This creates the pod and exposes it as a `ClusterIP` service in one command. You can manually convert the service to `NodePort` if external access is needed.
@@ -96,6 +97,4 @@ To list the environment variables passed to the pod:
 kubectl exec cert-pod -- printenv 
 ```
 You’ll see `NAME=YourName` in the output.
-
-
 
