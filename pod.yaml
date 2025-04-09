@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: # 🔍 container name here
-      image: gmadhavi/zero-2-k8s:1.0.0
+      image: gmadhavi/zero-to-k8s
       env:
         - name: NAME
           value: # 🔍 your full name
