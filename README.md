@@ -4,7 +4,7 @@ Sign up for account in [killercoda](https://killercoda.com/login).
 
 The session is free for 4 hours!
 
-## Hand - Dandy guide
+## Handy - Dandy guide
 
 The [list of commands](https://github.com/MG40/zero-2-k8s/blob/main/ls-commands.md) that we will run through. 
 
