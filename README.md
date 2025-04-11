@@ -1,8 +1,22 @@
-# 🎓 Zero to Kubernetes – Certificate Puzzle
+# 🎓 Zero to Kubernetes 
+
+Sign up for account in [killercoda](https://killercoda.com/login).
+
+The session is free for 4 hours!
+
+## Hand - Dandy guide
+
+The [list of commands](https://github.com/MG40/zero-2-k8s/blob/main/ls-commands.md) that we will run through. 
+
+## Challenge - Imperative
+
+It's [imperative](https://github.com/MG40/zero-2-k8s/blob/main/imperative.md) you do it now. 
+
+##– Certificate Puzzle
 
 Deploy your own certificate app and earn your personalized Kubernetes certificate!
 
-## 🧩 The Challenge
+## 🧩 The Challenge - Declarative - Let the controller handle it!
 
 You’ve been given two incomplete Kubernetes manifests:
 
