@@ -8,20 +8,18 @@ The session is free for 4 hours!
 
 The [list of commands](https://github.com/MG40/zero-2-k8s/blob/main/ls-commands.md) that we will run through. 
 
-## Challenge - Imperative
+## The Challenge #1 - Imperative
 
 It's [imperative](https://github.com/MG40/zero-2-k8s/blob/main/imperative.md) you do it now. 
 
-##– Certificate Puzzle
+## The Challenge #2- Declarative - Let the controller handle it!
 
 Deploy your own certificate app and earn your personalized Kubernetes certificate!
 
-## 🧩 The Challenge - Declarative - Let the controller handle it!
-
 You’ve been given two incomplete Kubernetes manifests:
 
-- `pod.yaml` – defines a Pod that serves your certificate
-- `service.yaml` – exposes it via NodePort
+- `[pod.yaml](https://github.com/MG40/zero-2-k8s/blob/main/pod.yaml)` – defines a Pod that serves your certificate
+- `[service.yaml](https://github.com/MG40/zero-2-k8s/blob/main/pod.yaml)` – exposes it via NodePort
 
 Your task is to:
 - Fill in all the missing values marked with `# 🔍`
